@@ -18,7 +18,7 @@ namespace QRCoding.Controllers
             return new string[] { "use /qrcodes/?q={website adress to be qrcoded}" };
         }
 
-        // GET: api/QRCodes/5
+        // GET: api/QRCodes/q?={address}
         public HttpResponseMessage Get([FromUri]string q)
         {
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
